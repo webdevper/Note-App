@@ -12,3 +12,9 @@ img.src ="Image/delete.png";
 notesContainer.appendChild(inputBox).appendChild(img);
 
 })
+
+notesContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.remove();
+    }
+})

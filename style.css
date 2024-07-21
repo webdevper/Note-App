@@ -10,7 +10,7 @@
     min-height: 100vh;
     background: linear-gradient(236deg, #04527d, #e5b8ff);
     color: #fff;
-    padding: 0  5%  0;
+    padding: 50px 0 0 95px;
 }
 
 .container h1 {
@@ -46,7 +46,7 @@
     width: 30px;
 }
 
-.input-box{
+.input-box {
     position: relative;
     width: 100%;
     max-width: 500px;
@@ -59,18 +59,26 @@
     border-radius: 5px;
 }
 
-.notes-container p img{
-width: 25px;
-position: absolute;
-bottom: 15px;
-right: 15px;
+.notes-container p img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:670px) {
     .container button {
         font-size: 14px;
         padding: 9px 15px;
-    margin: 30px 0 20px;
+        margin: 30px 0 20px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container {
+
+        padding: 0 5% 0;
     }
 }
